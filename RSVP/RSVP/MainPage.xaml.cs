@@ -14,6 +14,21 @@ namespace RSVP
         {
             InitializeComponent();
         }
+
+        private async void ExistingUserClicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new EventDetails());
+        }
+
+        private async void NewUserClicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new AccountManagement());
+        }
+
+        private async void GuestUserClicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new EventDetails());
+        }
     }
 }
 
