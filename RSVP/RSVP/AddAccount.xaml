@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RSVP.AddAccount">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="20">
+            <Label Text="Manage Your Account" FontSize="Medium" HorizontalOptions="Center"/>
+            <Entry x:Name="nameEntry" Placeholder="Full name" Text=""/>
+            <Entry x:Name="emailEntry" Placeholder="Email" Text=""/>
+            <Entry x:Name="passwordEntry" Placeholder="Password" Text="" />
+            <Button Text="Save" x:Name="btnSave" Clicked="OnSaveClicked"/>
+            <Button Text="Logout" x:Name="btnLogout" Clicked="OnLogoutClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

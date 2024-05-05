@@ -9,11 +9,11 @@
         </Frame>
         <Label Text="Welcome to the RSVP app" FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
         <Label Text="Please sign in, create an account, or continue as a guest." FontSize="16" Padding="30,0,30,0" FontAttributes="Italic"/>
-        <Entry Placeholder="Email:" ClassId="txtLoginEmail" HorizontalTextAlignment="Start" Margin="0,25,0,0" />
-        <Entry Placeholder="Password: " ClassId="txtLoginEmail"/>
-        <Button Text="Login" TextColor="White" BackgroundColor="DarkRed" FontSize="Large" FontAttributes="Bold" CornerRadius="35" ClassId="btnLogin" WidthRequest="200" HorizontalOptions="CenterAndExpand" Margin="0,25,0,50" Clicked="ExistingUserClicked"/>
-        <Button Text="New User" TextColor="White" BackgroundColor="DarkRed" FontSize="Large" FontAttributes="Bold" CornerRadius="35" ClassId="btnNewUser" WidthRequest="200" HorizontalOptions="CenterAndExpand" Clicked="NewUserClicked"/>
-        <Button Text="Guest User" TextColor="White" BackgroundColor="DarkRed" FontSize="Large" FontAttributes="Bold" CornerRadius="35" ClassId="btnGuestUser" WidthRequest="200" HorizontalOptions="CenterAndExpand" Clicked="GuestUserClicked"/>
+        <Entry Placeholder="Email:" x:Name="txtLoginEmail" HorizontalTextAlignment="Start" Margin="0,25,0,0" />
+        <Entry Placeholder="Password: " x:Name="txtLoginPassword"/>
+        <Button Text="Login" x:Name="btnExistingUser" TextColor="White" BackgroundColor="DarkRed" FontSize="Large" FontAttributes="Bold" CornerRadius="35" ClassId="btnLogin" WidthRequest="200" HorizontalOptions="CenterAndExpand" Margin="0,25,0,50" Clicked="ExistingUserClicked"/>
+        <Button Text="New User" x:Name="btnNewUser" TextColor="White" BackgroundColor="DarkRed" FontSize="Large" FontAttributes="Bold" CornerRadius="35" ClassId="btnNewUser" WidthRequest="200" HorizontalOptions="CenterAndExpand" Clicked="NewUserClicked"/>
+        <Button Text="Guest User" x:Name="btnGuestUser" TextColor="White" BackgroundColor="DarkRed" FontSize="Large" FontAttributes="Bold" CornerRadius="35" ClassId="btnGuestUser" WidthRequest="200" HorizontalOptions="CenterAndExpand" Clicked="GuestUserClicked"/>
 </StackLayout>
     </ContentPage>
 

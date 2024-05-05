@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="RSVP.AddEvent">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RSVP.AddEvent">
+    <StackLayout Padding="30" Spacing="20">
+        <Entry x:Name="titleEntry" Placeholder="Event Title" />
+        <Editor x:Name="descriptionEditor" Placeholder="Event Description" />
+        <DatePicker x:Name="datePicker" />
+        <Button x:Name="btnAddEvent" Text="Add Event" Clicked="OnAddEventClicked" />
+    </StackLayout>
 </ContentPage>
 

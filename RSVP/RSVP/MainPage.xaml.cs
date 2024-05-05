@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace RSVP
@@ -15,19 +10,19 @@ namespace RSVP
             InitializeComponent();
         }
 
-        private async void ExistingUserClicked(System.Object sender, System.EventArgs e)
+        private async void ExistingUserClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EventDetails());
+            await Navigation.PushAsync(new ViewEvents());
         }
 
-        private async void NewUserClicked(System.Object sender, System.EventArgs e)
+        private async void NewUserClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AccountManagement());
+            await Navigation.PushAsync(new AddAccount());
         }
 
-        private async void GuestUserClicked(System.Object sender, System.EventArgs e)
+        private async void GuestUserClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EventDetails());
+            await Navigation.PushAsync(new ViewEvents());
         }
     }
 }

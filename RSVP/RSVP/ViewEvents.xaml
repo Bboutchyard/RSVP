@@ -1,10 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="RSVP.MyPage">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RSVP.ViewEvents">
+   <StackLayout Padding="20">
+        <Picker x:Name="eventsPicker" Title="Select Event Type"  >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>All Events</x:String>
+                    <x:String>Attending Events</x:String>
+                    <x:String>Hosting Events</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label x:Name="eventDetails" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Text="Select an event type to see details."/>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>
 
